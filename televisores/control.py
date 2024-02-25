@@ -1,9 +1,7 @@
-from tv import TV
-
 class Control:
 
-    def __init__(self, tv):
-        self._tv = tv
+    def __init__(self):
+        self._tv = None
 
     def getTv(self):
         return self._tv
@@ -11,9 +9,9 @@ class Control:
         self._tv = tv
 
     def turnOn(self):
-        self.tv.setEstado(True)
+        self._tv.setEstado(True)
     def turnOff(self):
-        self.tv.setEstado(False)
+        self._tv.setEstado(False)
 
     def canalUp(self):
         self._tv.canalUp()

@@ -1,6 +1,3 @@
-from control import Control
-from marca import Marca
-
 class TV:
     _numTV = 0
 
@@ -54,7 +51,7 @@ class TV:
 
     def getControl(self):
         return self._control
-    def SetControl(self, control):
+    def setControl(self, control):
         self._control = control
     
     def getNumTV(self):
@@ -69,3 +66,5 @@ class TV:
 
     def getEstado(self):
         return self._estado
+    def setEstado(self, estado):
+        self._estado = estado
